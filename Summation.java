@@ -6,9 +6,7 @@ public class Summation {
 
 	static {
 		recursive = (a, b) -> {
-			if (a == 0)
-				return b;
-			return recursive.apply(a - 1, b + a);
+			return a == 0 ? b : recursive.apply(a - 1, b + a);
 		};	
 		
 		iterative = (a) -> {
