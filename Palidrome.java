@@ -12,9 +12,8 @@ public class Palidrome {
 		};
 
 		iterative = (a) -> {
-			char[] chars = a.toCharArray();
-			for (int i = 0; a.length() - 2 * i < 2; i++)
-				if (chars[i] != chars[a.length() - (i + 1)])
+			for (int i = 0; a.length() - 2 * i > 2; i++)
+				if (a.charAt(i) != a.charAt(a.length() - (i + 1)))
 				       	return false;
 			return true;
 		};
