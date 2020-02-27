@@ -7,7 +7,7 @@ public class RecursionLab {
 		
 		do {
 			runAgain = true;
-			System.out.println("---------------------------------");
+			System.out.println("\n---------------------------------");
 			System.out.println("1 Fibonacci Sequence");
 			System.out.println("2 Summation");
 			System.out.println("3 Exponent");
@@ -28,29 +28,34 @@ public class RecursionLab {
 					case 1:
 						System.out.print("\nNumber of elements to output: ");
 						input2 = Integer.parseInt(in.nextLine());
-						System.out.println(FibonacciSequence.recursiveMethod(input2));
-						System.out.println(FibonacciSequence.iterativeMethod(input2));
+						System.out.println("Recursive: " + FibonacciSequence.recursiveMethod(input2));
+						System.out.println("Iterative: " + FibonacciSequence.iterativeMethod(input2));
 						break;
 					case 2: 
+						System.out.print("\nSum to #: ");
 						input2 = Integer.parseInt(in.nextLine());
-						System.out.println(Summation.recursiveMethod(input2));
-						System.out.println(Summation.iterativeMethod(input2));	
+						System.out.println("Recursive: " + Summation.recursiveMethod(input2));
+						System.out.println("Iterative: " + Summation.iterativeMethod(input2));	
 						break;
 					case 3:
+						System.out.print("\nNumber: ");
 						input2 = Integer.parseInt(in.nextLine());
+						System.out.print("Power: ");
 						input3 = Integer.parseInt(in.nextLine());
-						System.out.println(Exponent.recursiveMethod(input2, input3));
-						System.out.println(Exponent.iterativeMethod(input2, input3));
+						System.out.println("Recursive: " + Exponent.recursiveMethod(input2, input3));
+						System.out.println("Iterative: " + Exponent.iterativeMethod(input2, input3));
 						break;
 					case 4: 
+						System.out.print("\nString: ");
 						strIn = in.nextLine();
-						System.out.println(ReverseString.recursiveMethod(strIn));
-						System.out.println(ReverseString.iterativeMethod(strIn));
+						System.out.println("Recursive: " + ReverseString.recursiveMethod(strIn));
+						System.out.println("Iterative: " + ReverseString.iterativeMethod(strIn));
 						break;
 					case 5:
+						System.out.print("\nCheck String: ");
 						strIn = in.nextLine();
-						System.out.println(Palidrome.recursiveMethod(strIn));
-						System.out.println(Palidrome.iterativeMethod(strIn));
+						System.out.println("Recursive: " + Palidrome.recursiveMethod(strIn));
+						System.out.println("Iterative: " + Palidrome.iterativeMethod(strIn));
 						break;
 				}
 			} catch(Exception e) {
