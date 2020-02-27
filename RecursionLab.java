@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class RecursionLab {
 	public RecursionLab() {
 		boolean runAgain;
@@ -17,20 +19,38 @@ public class RecursionLab {
 			
 			try {
 				int input = Integer.parseInt(in.next());
+				int input2;
+				int input3;
+				String strIn;
 				in.nextLine();
 
 				switch (input) {
 					case 1:
 						System.out.print("\nNumber of elements to output: ");
-						
+						input2 = Integer.parseInt(in.nextLine());
+						System.out.println(FibonacciSequence.recursiveMethod(input2));
+						System.out.println(FibonacciSequence.iterativeMethod(input2));
 						break;
 					case 2: 
+						input2 = Integer.parseInt(in.nextLine());
+						System.out.println(Summation.recursiveMethod(input2));
+						System.out.println(Summation.iterativeMethod(input2));	
 						break;
 					case 3:
+						input2 = Integer.parseInt(in.nextLine());
+						input3 = Integer.parseInt(in.nextLine());
+						System.out.println(Exponent.recursiveMethod(input2, input3));
+						System.out.println(Exponent.iterativeMethod(input2, input3));
 						break;
 					case 4: 
+						strIn = in.nextLine();
+						System.out.println(ReverseString.recursiveMethod(strIn));
+						System.out.println(ReverseString.iterativeMethod(strIn));
 						break;
 					case 5:
+						strIn = in.nextLine();
+						System.out.println(Palidrome.recursiveMethod(strIn));
+						System.out.println(Palidrome.iterativeMethod(strIn));
 						break;
 				}
 			} catch(Exception e) {
